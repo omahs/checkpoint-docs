@@ -10,7 +10,7 @@ These are used to query single or multiple metadata records. Metadata records ar
 
 ```graphql
 type Query {
-    """ queries a single metadata value by it's id (key) """
+    """ queries a single metadata value by its id (key) """
     _metadata(id: ID!): _Metadata
 
     """ queries multiple metadata values """
@@ -50,10 +50,10 @@ These queries are defined as:
 
 ```graphql
 type Query {
-    """ queries a single _checkpoint entry by it's id"""
+    """ queries a single _checkpoint entry by its id"""
     _checkpoint(id: ID!): _Checkpoint
     
-    """ queries multiple _checkpoint entires """
+    """ queries multiple _checkpoint entries """
     _checkpoints(
     first: Int
     skip: Int
